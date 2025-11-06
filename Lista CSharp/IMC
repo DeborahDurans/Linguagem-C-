@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double altura, imc, peso;
+		Console.WriteLine("Digite sua altura/m: ");
+		altura = double.Parse(Console.ReadLine());
+		Console.WriteLine("Digite o seu peso/kg: ");
+		peso = double.Parse(Console.ReadLine());
+		imc = peso / (altura * altura);
+		Console.WriteLine("O seu IMC e: "+imc+" ");
+	}
+}

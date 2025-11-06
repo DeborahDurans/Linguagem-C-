@@ -1,0 +1,35 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double nota1, nota2, nota3, nota4, nota5, nota6, nota7, media1, media2, media3;
+		Console.WriteLine("Qual a primeira nota?");
+		nota1  = double.Parse(Console.ReadLine());
+		Console.WriteLine("Qual a segunda nota?");
+		nota2 = double.Parse(Console.ReadLine());
+		Console.WriteLine("Qual a terceira nota?");
+		nota3 = double.Parse(Console.ReadLine());
+		media1 = (nota1 + nota2 + nota3)/3;
+		Console.WriteLine("Qual a quarta nota?");
+		nota4 = double.Parse(Console.ReadLine());
+		Console.WriteLine("Qual a quinta nota?");
+		nota5 = double.Parse(Console.ReadLine());
+		Console.WriteLine("Qual a sexta nota?");
+		nota6 = double.Parse(Console.ReadLine());
+		Console.WriteLine("Qual a setima nota?");
+		nota7 = double.Parse(Console.ReadLine());
+		media2 = (nota4 + nota5 + nota6)/3;
+		media3 = (media1 + media2 + nota7)/3;
+		if (media3 < 60){
+			Console.WriteLine("O aluno esta com o conceito C e a media e: "+media3+"");
+		}
+		else if (60 <= media3 && media3 < 80){
+			Console.WriteLine("O aluno esta com o conceito B e a media e: "+media3+" ");
+		}
+		else if (media3 >= 80){
+			Console.WriteLine("O aluno esta com o conceito A e a media e: "+media3+" ");
+		}		
+	}
+}

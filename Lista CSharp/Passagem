@@ -1,0 +1,42 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int codigo;
+		double passagem, valor;
+		char tipo;
+		Console.WriteLine("Digite o codigo de destino (1 - 4): ");
+		codigo = int.Parse(Console.ReadLine());
+		if (codigo == 1){
+			Console.WriteLine("O seu destino sera Morros e a passagem custa R$120.00");
+			passagem = 120.00;
+		}
+		else if (codigo == 2){
+			Console.WriteLine("O seu destino sera Barreirinhas e a passagem custa R$200.00");
+			passagem = 200.00;
+		}
+		else if (codigo == 3){
+			Console.WriteLine("O seu destino sera Bacabeira  e a passagem custa R$50.00");
+			passagem = 50.00;
+		}
+		else if (codigo == 4){
+			Console.WriteLine("O seu destino sera Rosario  e a passagem custa R$80.00");
+			passagem = 80.00;
+		}
+		else {
+			Console.WriteLine("O codigo esta invalido");
+			return;
+		}
+		Console.WriteLine("Gostaria de comprar a passagem de ida e volta, caso havera 10% de desconto (S/N): ");
+		tipo = char.Parse(Console.ReadLine());
+		if (tipo == 'S' || tipo == 's'){
+			valor = passagem * 2 * 0.9;
+			Console.WriteLine("O valor sera: "+valor.ToString("F2")+" ");
+		}
+		else {
+			Console.WriteLine("O valor sera: "+passagem.ToString("F2")+" ");
+		}
+	}
+}

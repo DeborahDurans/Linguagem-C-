@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double glicose;
+		Console.WriteLine("Digite a medida da glicose do paciente: ");
+		glicose = double.Parse(Console.ReadLine());
+		if (glicose <= 100){
+		Console.WriteLine("O paciente esta com a glicose normal");
+		}
+		else if (glicose <= 140){
+			Console.WriteLine("O paciente esta com a glicose elevada");
+		}
+		else{
+			Console.WriteLine("O paciente esta diabetico");
+		}
+	}
+}

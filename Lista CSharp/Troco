@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double produto, qtd, valor, dinheiro, troco;
+		Console.WriteLine("Digite o valor do produto: ");
+		produto = double.Parse(Console.ReadLine());
+		Console.WriteLine("Digite a quantidade desse produto: ");
+		qtd = double.Parse(Console.ReadLine());
+		Console.WriteLine("Quanto o cliente pagou?");
+		dinheiro = double.Parse(Console.ReadLine());
+		valor = qtd * produto;
+		troco = dinheiro - valor;
+		if (valor<dinheiro){
+			Console.WriteLine("O troco e de : "+troco.ToString("F2")+" ");
+		}
+		else{
+			Console.WriteLine("O dinheiro e insuficiente");
+		}
+			
+	}
+}

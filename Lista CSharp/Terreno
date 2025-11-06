@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double comprimento, largura, area, vmq, preco;
+		Console.WriteLine("Digite o valor da largura do terreno: ");
+		largura = double.Parse(Console.ReadLine());
+		Console.WriteLine("Digite o valor do comprimento do terreno: ");
+		comprimento = double.Parse(Console.ReadLine());
+		area = comprimento * largura;
+		Console.WriteLine("Qual o valor do metro quadrado da sua regiao? ");
+		vmq = double.Parse(Console.ReadLine());
+		preco = area * vmq;
+		Console.WriteLine("A area do terreno e: "+area.ToString("F2")+" m2");
+		Console.WriteLine("O preco do terreno de acordo com sua regiao e: "+preco.ToString("F2")+" ");
+		
+		
+		
+	}
+}

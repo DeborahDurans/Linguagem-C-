@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int minutos;
+		double valor;
+		Console.WriteLine("Digite o valor de minutos consumidos: ");
+		minutos = int.Parse(Console.ReadLine());
+		if (minutos <= 100) {
+			Console.WriteLine("O valor e de: 50 reais");
+		}
+		else
+		{
+			valor = (minutos - 100) * 2.0 + 50;
+			Console.WriteLine("O valor e de: "+valor+" reais");
+		}
+	}
+}
